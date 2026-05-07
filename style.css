@@ -1,6 +1,6 @@
 @font-face {
   font-family: zamzam_pizza;
-  src: url("./Gilroy-Medium_eHDK2RllDd.ttf");
+  src: url("./public/Gilroy-Medium_eHDK2RllDd.ttf");
 }
 
 * {
@@ -249,23 +249,6 @@ footer {
   transition: ease-in-out 0.8s;
 }
 
-/* .instagram {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-   display: inline;
-}
-
-.instagram>i {
-  position: absolute;
-  left: 35%;
-  top: 50%;
-  padding: 20px;
-  font-size: 35px;
-  background: linear-gradient(45deg, rgb(233, 6, 6), rgba(15, 15, 194, 0.557));
-
-} */
  .instagram i{
   position: absolute;
   right: 40%;
