@@ -1,6 +1,6 @@
 @font-face {
   font-family: zamzam_pizza;
-  src: url("./public/Gilroy-Medium_eHDK2RllDd.ttf");
+  src: url("../public/Gilroy-Medium_eHDK2RllDd.ttf");
 }
 
 * {
@@ -283,7 +283,7 @@ footer {
 
 .whatsapp i {
   cursor: pointer;
-  ~: text;
+-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
 }
@@ -437,7 +437,9 @@ footer {
 .connect a,i{
   font-size: 1.9rem;
 }
-
+.address{
+      margin-top: -4rem;
+}
 .address h2{
           font-size: 1.6rem;
 }
