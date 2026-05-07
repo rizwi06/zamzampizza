@@ -1,0 +1,466 @@
+@font-face {
+  font-family: zamzam_pizza;
+  src: url("./Gilroy-Medium_eHDK2RllDd.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.847);
+
+}
+/* #overlay{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+} */
+nav {
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+  margin-right: 50px;
+  width: 100%;
+
+
+}
+
+#logo img {
+  width: 90px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+
+
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: zamzam_pizza;
+  text-decoration: none;
+  color: white;
+  transition: ease-in cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+nav a:hover {
+  color: rgb(232, 88, 88);
+  transition: ease-in 0.5s;
+}
+
+#icon {
+  display: none;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  
+}
+
+section {
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Swiper {
+  width: 100%;
+  height: 300px;
+
+
+}
+
+.swiper-pagination {
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: black;
+}
+
+.img img {
+  width: 100vh;
+  object-fit: contain;
+
+}
+
+#middle {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(60deg, rgb(224, 84, 84), rgba(95, 95, 196, 0.557));
+}
+
+.text {
+  padding: 30px;
+  color: white;
+}
+
+
+.text h1 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: zamzam_pizza;
+}
+
+.boxes {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: -1%;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  overflow: hidden;
+}
+
+.box_2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.box_2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.boxes p:nth-child(2) {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: zamzam_pizza;
+  margin-left: 20px;
+
+
+}
+
+.boxes p:first-child {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: zamzam_pizza;
+  top: 85%;
+  left: 15%;
+
+}
+
+footer {
+  width: 100vw;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+}
+
+.contact {
+  margin-left: 20px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connect {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.connect h4 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: black;
+  margin-left: 20px;
+}
+
+.connect a {
+
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  margin-left: 4px;
+  margin-bottom: 5px;
+  color: black;
+  margin-right: 20px;
+}
+
+.connect a:hover {
+  color: rgb(197, 14, 14);
+  border-bottom: 2px solid rgb(191, 99, 212);
+  transition: ease-in-out 0.8s;
+}
+
+/* .instagram {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   display: inline;
+}
+
+.instagram>i {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  padding: 20px;
+  font-size: 35px;
+  background: linear-gradient(45deg, rgb(233, 6, 6), rgba(15, 15, 194, 0.557));
+
+} */
+ .instagram i{
+  position: absolute;
+  right: 40%;
+  top: 50%;
+  padding: 20px;
+  font-size: 35px;
+  background: linear-gradient(45deg, rgb(233, 6, 6), rgba(15, 15, 194, 0.557));
+  display: inline;
+}
+
+
+
+
+.instagram i {
+
+  cursor: pointer;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.whatsapp i {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  padding: 20px;
+  font-size: 35px;
+  background-color: green;
+  display: inline;
+}
+
+.whatsapp i {
+  cursor: pointer;
+  ~: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+.address {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.address h2 {
+  font-size: 2.5vw;
+  font-weight: 400;
+  font-family: zamzam_pizza;
+}
+
+.address a {
+  font-size: 2.5vh;
+  text-decoration: none;
+  color: black;
+
+}
+
+
+#menu {
+  width: 100vw;
+
+  background: linear-gradient(60deg, rgb(224, 84, 84), rgba(95, 95, 196, 0.557));
+}
+
+#menu img {
+  width: 100vw;
+  mix-blend-mode: multiply;
+  background: transparent;
+  text-align: center;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+
+@media (max-width:768px) {
+  header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  }
+  nav a {
+    display: none;
+    cursor: pointer;
+  }
+
+  #icon  {
+    display: inline;
+    font-size: 12vw;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .Swiper {
+    width: 100vw;
+    height: 200px;
+
+  }
+
+  .img {
+    width: 100vw;
+
+    background-color: white;
+  }
+
+  .img img {
+    width: 100%;
+  }
+
+  #middle {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .text {
+    position: absolute;
+    top: 45%;
+  }
+
+  .boxes {
+    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+   margin-bottom: 15px;
+   margin-top: 10px;
+  }
+
+  .box_2 {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+  }
+  .boxes p:nth-child(2){
+    margin-left: 49px;
+    margin-top: 5px;
+  }
+
+  #hidden {
+    display: none;
+  }
+
+  #hidden_2 {
+    display: none;
+  }
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+.instagram i{
+          position: absolute;
+        top: 288px;
+        margin-left: 40px;
+}
+.whatsapp i{
+          position: absolute;
+        top: 288px;
+        margin-left: 40px;
+}
+.connect h4{
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.connect a,i{
+  font-size: 1.9rem;
+}
+
+.address h2{
+          font-size: 1.6rem;
+}
+.address h5{
+   font-size: 0.9rem;
+   display: inline;
+   
+}
+}
