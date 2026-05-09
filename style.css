@@ -131,7 +131,7 @@ section {
 
 
 .text h1 {
-  font-size: 20px;
+  font-size: 50px;
   font-weight: 400;
   font-family: zamzam_pizza;
 }
@@ -144,12 +144,12 @@ section {
   align-items: center;
   justify-content: center;
   gap: 25px;
-  margin-top: -1%;
+  margin-top: 2%;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 60%;
   overflow: hidden;
 }
@@ -177,10 +177,10 @@ section {
 
 .boxes p:nth-child(2) {
   position: absolute;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 200;
   font-family: zamzam_pizza;
-  margin-left: 20px;
+  margin-left: 50px;
 
 
 }
