@@ -63,7 +63,7 @@ nav {
 }
 
 nav a {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 300;
   font-family: zamzam_pizza;
   text-decoration: none;
@@ -155,8 +155,8 @@ section {
 }
 
 .box_2 {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 60%;
   overflow: hidden;
 }
@@ -329,7 +329,7 @@ footer {
 
 
 
-@media (max-width:768px) {
+@media (max-width:600px) {
   header{
   position: sticky;
   top: 0;
