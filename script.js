@@ -19,3 +19,18 @@ const swiper = new Swiper('.swiper', {
   
 
 });
+
+
+let icon = document.querySelector("#icon")
+let overlay = document.querySelector("#overlay")
+
+
+icon.addEventListener("click",()=>{
+ if(overlay.style.display == "block"){
+  overlay.style.display="none"
+ }
+ else{
+  overlay.style.display ="block"
+ }
+
+})

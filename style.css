@@ -27,7 +27,7 @@ main {
 }
 
 header {
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 10px;
   width: 100%;
   display: flex;
@@ -36,12 +36,7 @@ header {
 
 }
 
-/* #overlay{
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 1;
-} */
+
 nav {
 
   display: flex;
@@ -76,15 +71,55 @@ nav a:hover {
   color: rgb(232, 88, 88);
   transition: ease-in 0.5s;
 }
-
+/* kaam krna hai */
 #icon {
   display: none;
-  font-size: 20px;
+  font-size: 2rem;
   color: white;
   text-align: center;
+z-index: 999;
+transition: all ease-in 0.9s;
+}
+#icon>i:active{
+color: rgb(232, 88, 88);
+scale: 2;
+}
+  #icon #overlay{
+position: absolute;
+top: 66%;
+left: 43%;
+  z-index: 999;
+  min-width: 100px;
+  min-height: 200px;
+} 
+#overlay{
+      border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    
+}
+#overlay>nav {
+ display: flex;
+ flex-direction: column;
+z-index: 999;
 
 }
+#overlay>nav a {
+  font-weight: 300;
+  font-family: zamzam_pizza;
+  text-decoration: none;
+  color: white;
+  transition: ease-in cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
 
+#overlay>nav a:hover {
+  color: rgb(232, 88, 88);
+  transition: ease-in 0.5s;
+}
 section {
 
   display: flex;
@@ -226,7 +261,7 @@ footer {
 }
 
 .connect h4 {
-  font-size: 24px;
+  font-size: 2.6rem;
   font-weight: 300;
   margin-bottom: 20px;
   color: black;
@@ -235,7 +270,7 @@ footer {
 
 .connect a {
 
-  font-size: 14px;
+  font-size: 1.6rem;
   font-weight: 100;
   text-decoration: none;
   margin-left: 4px;
@@ -250,14 +285,19 @@ footer {
   transition: ease-in-out 0.8s;
 }
 
+.connect>i{
+  font-size: 1.6rem;
+}
+
 .instagram i {
-  position: absolute;
-  right: 40%;
+  position: relative;
+  right: 50%;
   top: 50%;
   padding: 20px;
-  font-size: 35px;
+  font-size: 3rem;
   background: linear-gradient(45deg, rgb(233, 6, 6), rgba(15, 15, 194, 0.557));
   display: inline;
+  z-index: 999;
 }
 
 
@@ -273,13 +313,14 @@ footer {
 }
 
 .whatsapp i {
-  position: absolute;
-  left: 15%;
-  top: 50%;
+  position: relative;
+  left: -5%;
+  top: -80%;
   padding: 20px;
-  font-size: 35px;
+  font-size: 3rem;
   background-color: green;
   display: inline;
+  z-index: 999;
 }
 
 .whatsapp i {
@@ -299,18 +340,21 @@ footer {
 }
 
 .address h2 {
-  font-size: 2.5vw;
+  font-size: 1.6rem;
   font-weight: 400;
   font-family: zamzam_pizza;
 }
 
 .address a {
-  font-size: 2.5vh;
+  font-size: 1.4rem;
   text-decoration: none;
   color: black;
 
 }
-
+.address>i{
+  font-size: 1.6rem;
+ 
+}
 
 #menu {
   width: 100vw;
@@ -342,7 +386,15 @@ footer {
     display: none;
     cursor: pointer;
   }
-
+ #overlay>nav a {
+   display: inline;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+   #overlay{
+    display:none;
+   }
   #icon {
     display: inline;
     font-size: 12vw;
@@ -352,8 +404,10 @@ footer {
 
   #icon>i {
     font-size: 2rem;
+  
   }
 
+ 
   .Swiper {
     width: 100vw;
     height: 200px;
@@ -386,7 +440,8 @@ footer {
   }
 
   .text h1 {
-    font-size: 1.8rem;
+   font-size: 1.6rem;
+   margin-top: 37px;
   }
 
   .boxes {
@@ -433,14 +488,16 @@ footer {
 
   .instagram i {
     position: relative;
-    top: 20px;
-    margin-left: 171px;
+    top: -18px;
+    margin-left: 236px;
+    font-size: 1.8rem;
   }
 
   .whatsapp i {
     position: relative;
-    top: -33px;
-    margin-left: 130px;
+    top: -65px;
+    margin-left: 200px;
+    font-size: 1.8rem;
 
   }
 
@@ -450,8 +507,8 @@ footer {
 
   .connect h4 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.6rem;
+    margin-bottom: 3px;
   }
 
   .connect a,
