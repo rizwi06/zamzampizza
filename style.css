@@ -27,7 +27,6 @@ main {
 }
 
 header {
-  /* overflow: hidden; */
   padding: 10px;
   width: 100%;
   display: flex;
@@ -71,43 +70,48 @@ nav a:hover {
   color: rgb(232, 88, 88);
   transition: ease-in 0.5s;
 }
-/* kaam krna hai */
+
 #icon {
   display: none;
   font-size: 2rem;
   color: white;
   text-align: center;
-z-index: 999;
-transition: all ease-in 0.9s;
+  z-index: 999;
+  transition: all ease-in 0.9s;
 }
-#icon>i:active{
-color: rgb(232, 88, 88);
-scale: 2;
+
+#icon>i:active {
+  color: rgb(232, 88, 88);
+  scale: 2;
 }
-  #icon #overlay{
-position: absolute;
-top: 66%;
-left: 43%;
+
+#icon #overlay {
+  position: absolute;
+  top: 66%;
+  left: 43%;
   z-index: 999;
   min-width: 100px;
   min-height: 200px;
-} 
-#overlay{
-      border-radius: 20px;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: white;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    
 }
-#overlay>nav {
- display: flex;
- flex-direction: column;
-z-index: 999;
+
+#overlay {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 
 }
+
+#overlay>nav {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+
+}
+
 #overlay>nav a {
   font-weight: 300;
   font-family: zamzam_pizza;
@@ -120,6 +124,7 @@ z-index: 999;
   color: rgb(232, 88, 88);
   transition: ease-in 0.5s;
 }
+
 section {
 
   display: flex;
@@ -156,7 +161,6 @@ section {
 
 #middle {
   width: 100vw;
-  /* height: 64vh; */
   background: linear-gradient(60deg, rgb(224, 84, 84), rgba(95, 95, 196, 0.557));
 }
 
@@ -217,7 +221,7 @@ section {
   font-weight: 200;
   font-family: zamzam_pizza;
   margin-left: 50px;
-
+margin-top: -9px;
 
 }
 
@@ -269,7 +273,6 @@ footer {
 }
 
 .connect a {
-
   font-size: 1.6rem;
   font-weight: 100;
   text-decoration: none;
@@ -285,7 +288,7 @@ footer {
   transition: ease-in-out 0.8s;
 }
 
-.connect>i{
+.connect>i {
   font-size: 1.6rem;
 }
 
@@ -300,11 +303,7 @@ footer {
   z-index: 999;
 }
 
-
-
-
 .instagram i {
-
   cursor: pointer;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -351,16 +350,18 @@ footer {
   color: black;
 
 }
-.address>i{
+
+.address>i {
   font-size: 1.6rem;
- 
+
 }
 
 menu {
   width: 100vw;
   background: linear-gradient(60deg, rgb(224, 84, 84), rgba(95, 95, 196, 0.557));
   overflow-y: hidden;
-overflow-x: auto;
+  overflow-x: auto;
+
 }
 
 #menu img {
@@ -371,79 +372,226 @@ overflow-x: auto;
   object-fit: cover;
   object-position: center;
 }
-.title{
-width: 100%;
-padding: 20px;
+
+.title {
+  width: 100%;
+  padding: 20px;
 }
-.title h1{
+
+.title h1 {
   font-size: 3rem;
   font-weight: 500;
   color: white;
   font-family: zamzam_pizza;
   margin-top: 10px;
   border-bottom: 1px solid violet;
+  cursor: pointer;
 }
-.container{
+
+.container {
 
   width: 100%;
   height: 100%;
   display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
- 
+
 }
 
-.card{
- 
- position: relative;
+.card {
+  position: relative;
   margin: 10px;
   width: 200px;
-  height: 250px;
+  height: 270px;
   border-radius: 20px;
   flex-shrink: 0;
 }
-.card{
-   border-radius: 20px;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: white;
-    box-shadow: 0 16px 32px rgba(0,0,0,0.2);
+
+.card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
-.card img{
+
+.card img {
   position: absolute;
   top: 10px;
-  left:45px;
+  left: 45px;
   width: 98px;
   height: 98px;
   border-radius: 50px;
-  background-color:pink;
   text-align: center;
+  object-fit: cover;
+  
 }
-.card h3{
+
+.card h3 {
   font-size: 1.3rem;
   margin-top: 113px;
   text-align: center;
+
 }
-.card p{
+
+.card p {
   font-size: .8rem;
   margin-top: 1px;
   text-align: center;
 }
-.card button{
- padding: 6px;
- margin-top: 15px;
- margin-left: 58px;
+
+.card button {
+  padding: 6px;
+  margin-top: 15px;
+  margin-left: 58px;
   border-radius: 5px;
 }
-.card button:hover{
+
+.card button:hover {
   background-color: rgb(183, 127, 224);
   color: white;
   transition: all ease-in 0.5s;
   cursor: pointer;
 }
+#about{
+  padding: 20px;
+  display:flex ;
+  align-items: center;
+  justify-content: space-between;
+  height: 67%;
+  width: 100%;
+}
+#left{
+  position: relative;
+  width: 100%;
+
+}
+#left img{
+  width: 400px;
+ position: absolute;
+top: -20%;
+left: 50%; 
+transform: translate(-50%,-56%);
+}
+#right{
+  color: rgb(194, 78, 78);
+  width: 100%;
+
+}
+#right ul{
+position: absolute;
+top: 32%;
+right: 38%;
+transform: translate(-50%,-50%);
+}
+#right h1{
+  
+position: absolute;
+top: 20%;
+right: -10%;
+transform: translate(-50%,-50%);
+font-size: 2rem;
+font-weight: 400;
+}
+#right p{
+  font-size: 0.8rem;
+  font-weight: 200;
+position: absolute;
+top: 25%;
+right: -12%;
+transform: translate(-50%,-50%);
+}
+#btn{
+ position: absolute;
+  top: 45%;
+  left: 65%; 
+  padding: 8px 10px 8px 10px;
+  font-size: 1rem;
+}
+button:hover{
+  background-color: aqua;
+  color: white;
+  transition:all ease-in 0.6s ;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.status{
+  position: absolute;
+  top: 53%;
+  width: 100%;
+  height: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.text-status h3{
+font-size: 1.6rem;
+font-weight: 400;
+text-align: center;
+}
+.text-status p{
+font-size: 1rem;
+font-weight: 400;
+text-transform: uppercase;
+}
+#bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 30%;
+}
+.left-bottom{
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+.left-bottom h1,p{
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+.right-bottom{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  gap: 20px;
+}
+.img-1{
+  width: 100%;
+height: 100%;
+background-color: red;
+border-radius: 20px;
+}
+.img-2{
+  width: 100%;
+height: 100%;
+background-color: rgb(52, 147, 81);
+border-radius: 20px;
+}
+
+#video{
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+video{
+  width: 800px;
+  height: 360px;
+  background-color: pink;
+  border-radius: 20px;
+}
+
 @media (max-width:768px) {
   header {
     position: sticky;
@@ -456,15 +604,18 @@ justify-content: center;
     display: none;
     cursor: pointer;
   }
- #overlay>nav a {
-   display: inline;
+
+  #overlay>nav a {
+    display: inline;
     cursor: pointer;
     margin-top: 10px;
     font-size: 1rem;
   }
-   #overlay{
-    display:none;
-   }
+
+  #overlay {
+    display: none;
+  }
+
   #icon {
     display: inline;
     font-size: 12vw;
@@ -474,10 +625,10 @@ justify-content: center;
 
   #icon>i {
     font-size: 2rem;
-  
+
   }
 
- 
+
   .Swiper {
     width: 100vw;
     height: 200px;
@@ -510,8 +661,8 @@ justify-content: center;
   }
 
   .text h1 {
-   font-size: 1.6rem;
-   margin-top: 37px;
+    font-size: 1.6rem;
+    margin-top: 37px;
   }
 
   .boxes {
@@ -538,8 +689,9 @@ justify-content: center;
   }
 
   .boxes p:nth-child(2) {
-    margin-left: 49px;
-    margin-top: 5px;
+       margin-left: 20px;
+        margin-top: -6px;
+        white-space: nowrap;
   }
 
   #hidden {

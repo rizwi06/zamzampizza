@@ -37,8 +37,4 @@ icon.addEventListener("click",()=>{
 })
 
 
- 
-
-
-
 
