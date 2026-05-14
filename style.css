@@ -429,27 +429,24 @@ menu {
   object-fit: cover;
   
 }
-
 .card h3 {
   font-size: 1.3rem;
   margin-top: 113px;
   text-align: center;
 
 }
-
 .card p {
   font-size: .8rem;
   margin-top: 1px;
   text-align: center;
 }
-
 .card button {
+  position: absolute;
+  top:82%;
   padding: 6px;
-  margin-top: 15px;
   margin-left: 58px;
   border-radius: 5px;
 }
-
 .card button:hover {
   background-color: rgb(183, 127, 224);
   color: white;
@@ -646,11 +643,8 @@ video{
 
   #middle {
     overflow: hidden;
-    /* width: 100vw; */
-    /* height: 64vh; */
     display: flex;
     align-items: center;
-    /* space-between nhi to */
     justify-content: space-around;
 
   }
