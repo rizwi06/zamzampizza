@@ -14,9 +14,7 @@ body {
   width: 100%;
   height: 100%;
 
-
 }
-
 body::-webkit-scrollbar {
   display: none;
 }
@@ -32,20 +30,16 @@ header {
   display: flex;
   justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.847);
-
 }
 
 
 nav {
-
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: end;
   margin-right: 50px;
   width: 100%;
-
-
 }
 
 #logo img {
@@ -53,8 +47,6 @@ nav {
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
-
-
 }
 
 nav a {
@@ -207,14 +199,12 @@ section {
   object-fit: cover;
 
 }
-
 .box_2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: bottom;
 }
-
 .boxes p:nth-child(2) {
   position: absolute;
   font-size: 1.4rem;
@@ -224,7 +214,6 @@ section {
 margin-top: -9px;
 
 }
-
 .boxes p:first-child {
   position: absolute;
   font-size: 16px;
@@ -232,7 +221,6 @@ margin-top: -9px;
   font-family: zamzam_pizza;
   top: 85%;
   left: 15%;
-
 }
 
 footer {
@@ -308,7 +296,6 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
-
 }
 
 .whatsapp i {
@@ -357,13 +344,15 @@ footer {
 }
 
 menu {
+scroll-behavior: smooth;
   width: 100vw;
   background: linear-gradient(60deg, rgb(224, 84, 84), rgba(95, 95, 196, 0.557));
-  overflow-y: hidden;
-  overflow-x: auto;
-
+ 
 }
-
+#menu{
+  position: relative;
+  
+}
 #menu img {
   width: 100vw;
   mix-blend-mode: multiply;
@@ -372,7 +361,14 @@ menu {
   object-fit: cover;
   object-position: center;
 }
-
+#menu button{
+  padding: 15px 50px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+transform: translate(-50%,-100%);
+}
 .title {
   width: 100%;
   padding: 20px;
@@ -415,7 +411,7 @@ menu {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: white;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.358);
 }
 
 .card img {
@@ -442,17 +438,19 @@ menu {
 }
 .card button {
   position: absolute;
-  top:82%;
+  top:84%;
   padding: 6px;
   margin-left: 58px;
   border-radius: 5px;
 }
+
 .card button:hover {
   background-color: rgb(183, 127, 224);
   color: white;
   transition: all ease-in 0.5s;
   cursor: pointer;
 }
+
 #about{
   padding: 20px;
   display:flex ;
@@ -460,32 +458,38 @@ menu {
   justify-content: space-between;
   height: 67%;
   width: 100%;
+   background: linear-gradient(60deg, rgb(224, 84, 84), rgba(95, 95, 196, 0.557));
 }
+
 #left{
   position: relative;
   width: 100%;
-
 }
+
 #left img{
-  width: 400px;
  position: absolute;
 top: -20%;
-left: 50%; 
+left: 55%; 
 transform: translate(-50%,-56%);
+width: 740px;
+height: 300px;
+border-radius: 10px;
 }
-#right{
-  color: rgb(194, 78, 78);
-  width: 100%;
 
+
+#right{
+  width: 100%;
 }
+
 #right ul{
+
 position: absolute;
 top: 32%;
 right: 38%;
 transform: translate(-50%,-50%);
 }
-#right h1{
-  
+
+#right h1{ 
 position: absolute;
 top: 20%;
 right: -10%;
@@ -493,6 +497,7 @@ transform: translate(-50%,-50%);
 font-size: 2rem;
 font-weight: 400;
 }
+
 #right p{
   font-size: 0.8rem;
   font-weight: 200;
@@ -501,6 +506,7 @@ top: 25%;
 right: -12%;
 transform: translate(-50%,-50%);
 }
+
 #btn{
  position: absolute;
   top: 45%;
@@ -508,14 +514,17 @@ transform: translate(-50%,-50%);
   padding: 8px 10px 8px 10px;
   font-size: 1rem;
 }
+
 button:hover{
-  background-color: aqua;
+  background-color: rgba(202, 136, 209, 0.49);
   color: white;
   transition:all ease-in 0.6s ;
   border-radius: 15px;
   cursor: pointer;
 }
+
 .status{
+  color: white;
   position: absolute;
   top: 53%;
   width: 100%;
@@ -525,16 +534,19 @@ button:hover{
   justify-content: space-around;
   padding: 20px;
 }
+
 .text-status h3{
 font-size: 1.6rem;
 font-weight: 400;
 text-align: center;
 }
+
 .text-status p{
 font-size: 1rem;
 font-weight: 400;
 text-transform: uppercase;
 }
+
 #bottom{
   display: flex;
   align-items: center;
@@ -542,17 +554,20 @@ text-transform: uppercase;
   width: 100%;
   height: 30%;
 }
+
 .left-bottom{
   width: 100%;
   height: 100%;
   background-color: pink;
 }
+
 .left-bottom h1,p{
   padding: 10px;
   font-size: 1.6rem;
   font-weight: 500;
   text-align: center;
 }
+
 .right-bottom{
   display: flex;
   align-items:center;
@@ -562,12 +577,14 @@ text-transform: uppercase;
 
   gap: 20px;
 }
+
 .img-1{
   width: 100%;
 height: 100%;
 background-color: red;
 border-radius: 20px;
 }
+
 .img-2{
   width: 100%;
 height: 100%;
@@ -747,5 +764,18 @@ video{
     display: inline;
 
   }
-
+.title h1 {
+    font-size: 2rem;
+  }
+  menu{
+    scroll-behavior: smooth;
+  }
+#menu button {
+        padding: 8px 20px;
+        border-radius: 10px;
+        position: absolute;
+        left: 85%;
+        top: 126%;
+    
+    }
 }
